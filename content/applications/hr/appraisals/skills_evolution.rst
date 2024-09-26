@@ -98,6 +98,54 @@ appear. In this example, only :guilabel:`Marc Demo` meets these criteria.
    :align: center
    :alt: The employees with expert Javascript skills.
 
+Use case: Assess highest improvement
+====================================
+
+Another way to modify the :guilabel:`Appraisal Skills Report` is to identify the employee who has
+the highest amount of improved skills over a specific period of time. In this example, the employee
+with the most amount of improved skills for the third quarter is being determined.
+
+To view this information, first remove the default filter in the search bar. Next, click the
+:icon:`fa-caret-down` :guilabel:`(down arrow)` icon in the search bar, then click
+:guilabel:`Improvement` beneath the :icon:`fa-filter` :guilabel:`Filters` column. Enabling this
+filter only presents skills that have improved.
+
+With the search bar drop-down menu still expanded, click :guilabel:`Add Custom Filter` at the bottom
+of the :icon:`fa-filter` :guilabel:`Filters` column, and an :guilabel:`Add Custom Filter` pop-up
+window appears.
+
+Select :guilabel:`Create Date` for the first drop-down field, then select :guilabel:`is between` for
+the second drop-down field. Once :guilabel:`is between` is selected, a second field appears after
+the last field. Using the calendar selector, set the first date to :guilabel:`07/01/2024` and the
+second date to :guilabel:`09/30/2024`. Once all the fields are properly formatted, click
+:guilabel:`Add`.
+
+.. image:: skills_evolution/custom-filter.png
+   :align: center
+   :alt: The Custom Filter pop-up with the parameters set.
+
+These filters present only the skills that have improved during the third quarter (between July 1st
+and September 30th, 2024), organized by employee.
+
+The default list view may be difficult to view, depending on the number of employees and skills that
+are displayed. Click the :icon:`oi-view-pivot` :guilabel:`(Pivot)` icon in the top-right corner to
+view the data in a pivot table. This presents a pivot table with the employees populating the rows,
+and the only visible column represents the total number of improved skills.
+
+To further organize the data, and view which skill types had the most overall improvement, click
+:icon:`fa-plus-square` :guilabel:`Total` above the :guilabel:`Count` column, then click
+:guilabel:`Skill Type` from the resulting drop-down menu. This organizes the total improved skills
+by their respective skill type.
+
+.. example::
+   In this example, it is determined that :guilabel:`Charles Reginald` had the largest improvement
+   in the third quarter, with six improved skills. Additionally, they also had the most skill
+   improvements for both :guilabel:`Languages` (three) and :guilabel:`Programming Languages` (two).
+
+  .. image:: skills_evolution/largest-improvement.png
+     :align: center
+     :alt: The pivot table showing the skill improvements for the third quarter.
+
 .. seealso::
    - :doc:`Odoo essentials reporting <../../essentials/reporting>`
    - :doc:`../../essentials/search`
